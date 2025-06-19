@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li,a,button {
+    font-weight:700;
+    font-size: 16px;
+    text-decoration:none;
+    color:Black;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: 0 4px 4px -4px #aaaaaa;
+}
+
+.logo {
+    margin: auto 5%;
+    padding-top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 8%;
+    margin-right: auto;
+}
+
+.nav_links {
+    list-style: none;
+    padding-top: 0;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #f72585;
+    padding: 12px 45px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+button.custom-btn{
+    margin-left: 30px;
+    flex-basis: 48%;
+    justify-content: space-between;
+    border-radius: 22px;
+    border: 1px solid #ff4b2b;
+    background-color: #FF0080;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    transition: background 1s ease-in-out;
+    cursor: pointer;
+}
+
+button.custom-btn:hover {
+    background-color: #fe036a;
+    font-weight: 900;
+    transition: 0.3s;
+    box-shadow: 0 4px 4px -4px #aaaaaa;
+}
+
+
+
+.slider{
+	width:80%;
+	height:400px;
+	margin:auto;
+	border:solid black 2px;
+	margin-top:50px;
+}
+
+.slider-img{
+	border:solid green 3px;
+
+	
+}
+
+.slider-text{
+	border:solid yellow 8px;
+}
+
+
+
+
+
+
+
+
+
+
+#custom-div{
+	width: 400px;
+    height: 300px;
+    overflow: hidden; /* Prevent overflow */
+    position: relative;
+
+		 
+		  
+
+}
+#custom-img{
+	width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image covers the container*/
+    position: absolute; /
+}
+
+
+

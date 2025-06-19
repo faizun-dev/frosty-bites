@@ -1,0 +1,573 @@
+
+
+
+/* Header Section */
+.about-header {
+    text-align: center;
+    padding: 3rem 5%;
+	width: 100%; /* Set the width of the container */
+     /* Set the height to fill the viewport */
+	background-image:url('../img/aboutus.jpg');
+    object-fit:cover;
+    background-size: cover;
+    background-position:center bottom;
+	background-blend-mode:soft-light;
+    color: var(--accent-color);
+	
+}
+
+.about-header h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+    
+    
+}
+
+.about-header p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 5px 0 30px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.banner-image {
+    display: none;
+}
+.about-header .btn-getstarted,
+.about-header .btn-getstarted:focus {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.about-header .btn-getstarted:hover,
+.about-header .btn-getstarted:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  
+}
+@media (max-width: 1200px) {
+
+  .about-header .btn-getstarted {
+    order: 2;
+    margin: 0 15px 0 0;
+    padding: 14px 18px;
+  }
+
+  
+}
+
+
+
+/* Section Styles */
+
+
+
+section p, section ul {
+    font-size: 1rem;
+   
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    display: none;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.team-member p {
+    color: #666;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-header, section, footer {
+        padding: 2rem 3%;
+    }
+
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-member img {
+        margin-bottom: 1rem;
+    }
+}
+
+.custom-btn {
+    border-radius: 22px;
+    border: none;
+    background-color: #FF0080;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.custom-btn:hover {
+    background-color: #fe036a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mission {
+    text-align: center;
+    padding: 4rem 5%;
+	
+}
+
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+	
+}
+
+
+.why-choose-us{
+	background:#FAFAFA;
+}
+.feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3{
+    color:#f72585;
+    font-size: 2rem;
+    margin: 1rem 0;
+	font-weight:bold;
+}
+
+.feature p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.heart-icon, .cupcake-icon, .pencil-icon, .star-icon {
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.heart-icon { color: #ff4b4b; }
+.cupcake-icon { color: #ff69b4; }
+.pencil-icon { color: #ff69b4; }
+.star-icon { color: #ffd700; }
+
+/* Responsive design for features */
+@media (max-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 2rem auto;
+    }
+}
+
+.journey {
+    text-align: center;
+    padding: 4rem 5%;
+}
+
+.journey h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.journey-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.journey-content p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+}
+
+/*meet our team member*/
+.team {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.team h2 {
+    color: #333;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-card {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    width: 450px;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-icon {
+    margin-right: 1.5rem;
+}
+
+.chef-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.team-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+.team-info .role {
+    color: #ff69b4;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.descriptions {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.descriptions p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .team-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.description-box {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.description-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.member-info {
+    margin-top: 1rem;
+}
+/*
+.team-member .description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.team-member {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+*/
+.feature-emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.team-emoji {
+    font-size: 3.5rem;
+    margin-right: 1.5rem;
+}
+
+/* Remove the old image-related styles */
+.feature-icon, .chef-icon {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .team-emoji {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Signature Cupcakes Section */
+.signature-cupcakes {
+    padding: 4rem 5%;
+    background-color: #fff;
+}
+
+.signature-cupcakes h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 3rem;
+}
+
+.cupcake-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cupcake-item {
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cupcake-item:hover {
+    transform: translateY(-10px);
+}
+
+.cupcake-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.cupcake-item h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.cupcake-item .description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    min-height: 60px;
+}
+
+.cupcake-item .price {
+    color: #ff69b4;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.order-now-btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.order-now-btn:hover {
+    background-color: #e0559a;
+}
+
+/* Responsive design for cupcake grid */
+@media (max-width: 1024px) {
+    .cupcake-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cupcake-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
+
+.login-container, .register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-btn, .register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover, .register-btn:hover {
+    background-color: #e0559a;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.auth-btn {
+    padding: 5px 15px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.auth-btn:hover {
+    background-color: #e0559a;
+}
+
+.add-to-cart-btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ff1493;
+}
